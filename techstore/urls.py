@@ -12,7 +12,7 @@ urlpatterns = [
     path('', views.home, name='home'),  # Этот маршрут будет обрабатывать корневой URL
     path('computers/', views.computers, name='computers'),
     # Добавляем URL для авторизации
-    path('accounts/', include('accounts.urls')),
+    #path('accounts/', include('accounts.urls')),
 ]
 
 # Добавляем URL для медиа-файлов в режиме разработки

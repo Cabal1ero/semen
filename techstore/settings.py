@@ -30,13 +30,13 @@ INSTALLED_APPS = [
     'theme',
     'django_browser_reload',
     # Ваши приложения
-    'accounts',
+    #'accounts',
     'products',
 
 ]
 
 # Укажите кастомную модель пользователя
-AUTH_USER_MODEL = 'accounts.CustomUser'
+#AUTH_USER_MODEL = 'accounts.CustomUser'
 
 # Настройки для авторизации
 LOGIN_REDIRECT_URL = 'home'
