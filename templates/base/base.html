@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}TechStore{% endblock %}</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Наши стили -->
+    {% block extra_css %}{% endblock %}
+</head>
+<body class="min-h-screen bg-[#222935] flex flex-col">
+    <!-- Шапка сайта -->
+    {% include 'base/header.html' %}
+
+    <!-- Основное содержимое -->
+    <main class="flex flex-col items-center px-0 py-24 flex-grow">
+      {% block content %}
+      
+      {% endblock %}
+    </main>
+
+    <!-- Подвал сайта -->
+    {%  include 'base/footer.html' %}
+
+    <!-- Скрипты -->
+    
+    {% block extra_js %}{% endblock %}
+</body>
+</html>
